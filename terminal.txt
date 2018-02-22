@@ -1,0 +1,26 @@
+atom . //run atom
+exit
+
+evt: ./create_stack.sh
+
+docker-compose exec workspace bash  //laradock
+// artisan migrate:fresh or
+root@5b5a7fbcc4ad:/var/www# php artisan migrate
+(? ./artisan.sh) // docker-laravel
+//permission issues: eerst misschien nog: $ chmod +x own.sh
+sudo ./own.sh
+
+$ mysql -u default -h 172.20.0.2 -p    //(secret)  //root
+use default
+
+//ssh
+ssh-keygen
+cat ~/.ssh/id_rsa.pub
+
+git clone git@github:CodePowders/LaravelBlogW6.git
+
+git push
+
+sudo ./own.sh
+//https://www.youtube.com/watch?v=4pc6cgisbKE
+// https://www.tutorialspoint.com/laravel/laravel_routing.htm
