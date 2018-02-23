@@ -2,7 +2,9 @@
 
 Converting the blog from last week tot Laravel format:
 
-https://trello.com/b/mBbL9rjW/laravel-blog
+Trello: https://trello.com/b/mBbL9rjW/laravel-blog
+
+Website: http://lbw6t3.herokuapp.com/posts/create
 
 
 [W3-001]
