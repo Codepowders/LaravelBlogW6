@@ -12,13 +12,14 @@
       P.S. Je kunt ook geen foto selecteren!</p>
       <p>De text in de blog kun je opmaken met <u>HTML!</u><br />
       Voor een goede snelle cursus ga naar: <a href="https://www.w3schools.com/html/">w3schools.com</a></p><br />
-      <form name="form1" class="form1" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post" autocomplete="off" enctype="multipart/form-data">
+      <form name="form1" class="form1" action="/posts" method="post" autocomplete="off" enctype="multipart/form-data">
+        {{csrf_field()}}
       <div class="inform">
         <span class='namefield'>Titel Blog</span>
-        <input type='text' size='43' maxlength='50' name='title1' value='<?php echo $title1; ?>' autocomplete='off' /><br />
+        <input type='text' size='43' maxlength='50' name='title' value='<?php echo $title1; ?>' autocomplete='off' /><br />
         <div id='fieldspace'></div>
         <span class='namefield'>Text Blog:</span><br />
-        <textarea class="form-control" rows="10" cols="75" id="textarea" name="blog" onfocus="magic();"><?php echo $blog; ?></textarea><br />
+        <textarea class="form-control" rows="10" cols="75" id="article-ckeditor" name="body" onfocus="magic();"><?php echo $blog; ?></textarea><br />
         <span class='namefield'>Categorie</span>
         <select name='cat[]' style='width:150px' multiple>
         </select><br />
