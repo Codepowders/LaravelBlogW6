@@ -1,4 +1,4 @@
-# Laravelblogweek6:
+# Laravelblogweek6::
 
 Converting the blog from last week tot Laravel format:
 
