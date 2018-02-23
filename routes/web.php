@@ -38,5 +38,4 @@ Route::get('/about', function () {
 Route::get('/form',function(){
    return view('form');
 });
-
 Route::resource('posts','PostsController');
